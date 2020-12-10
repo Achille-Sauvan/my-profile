@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Page 2</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script type="text/javascript">
+
+	var prenom = "Achille";
+		alert("Hello "+ prenom);
+
+
+		var age = "20";
+
+		if(age > 18){
+			alert("vous etes majeur");
+		}
+		else if(age == 18){
+			alert("vous etes tout juste majeur");
+		}
+		else{
+			alert("vous etes mineur");
+		}
+
+	function validForm(){
+		var message = document.forms["contact"]["user_comment"].value; 
+		if(message =="") {
+		alert("Attention message vide"); 
+			}
+		}
+		</script>
+<a href="index.html"> retour sur mon CV </a>
+
+</head>
+<h1>contact</h1>
+
+<form action="mailto:jeremydcbr@gmail.com" method="post" enctype="multipart/form-data">
+Texte : <input type="text" name="" placeholder="Nom Prénom" autofocus><br>
+Mot de passe: <input type="password" name=""><br>
+Date de naissance: <input type="date" name=""><br>
+Téléphone: <input type="phone" name="" placeholder="06.06.06.06.06"><br>
+Civilitie: M.<input type="radio" name="cvlt">Mme<input type="radio" name="cvlt"><br>
+Case à cocher <input type="checkbox" name=""><br>
+Pays:
+<select name="">
+	<option>FR</option>
+	<option>BE</option>
+</select><br>
+Message: <textarea name=""></textarea><br>
+Bouton: <input type="submit" name="">
+
+
+
+</form>
+<body>
+  <!-- Le reste du contenu -->
+</body>
+</html>
+h1{color: #800000}
+	#title{color: #39ff14;}
+	#liste{color: #00BFFF;}
+	.premierli{color: #ff8300}
+	h3{color:red; font-family: arial}
+	strong{font-size: 10px}
+	img{width: 220px; height: 190; float: center}
+	strong{font-size: 10px}
+	body{background-color: #96ff98; border: 10px solid #fff000; margin: 40px; padding: 20px;
+-webkit-box-shadow: 0px 0px 19px 12px rgba(0,0,0,0.61); 
+box-shadow: 0px 0px 19px 12px rgba(234, 22, 240, 0.61);
+    border-radius: 70px}
+img{width: 239px}
+a:hover{color: green}
+
+
+@media screen and (max-width: 640px) {
+	#partiebasse{display: none;}
+	img{width: 30%}
+}
